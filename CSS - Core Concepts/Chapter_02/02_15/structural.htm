@@ -53,7 +53,6 @@ h2 {
 	font-weight: normal;
 	margin-bottom: 0;
 	color: #42403E;
-	border-bottom: 1px solid #42403E;
 }
 
 p {
@@ -81,7 +80,18 @@ h1 + p, h2 + p {
 }
 
 /*add styles here*/
-
+span:first-child {
+	font-size: 1.3em;
+	font-weight: bold;
+	color: maroon;
+}
+h2:first-of-type{
+	border-bottom: 1px solid #42403E;
+}
+p:only-child{
+	font-style: italic;
+	text-align: center;
+}
 </style>
 </head>
 <body>
