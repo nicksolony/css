@@ -19,7 +19,14 @@ attribution would be nice, but not required
 */
 
 /*Global styles -----------------------------------------------------------------------------------------------------------*/
-
+body {
+	font: 100% Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	position: relative;
+	color: rgb(76, 67, 65);
+	font-weight:normal;
+	font-style:normal;
+}
 /*limited reset*/
 html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
 	margin: 0;
@@ -242,38 +249,38 @@ a.shop {
 
 
 /*article styles*/
-#content article section {
+article section {
 	border-bottom: 2px solid rgb(76, 67, 65);
 	margin-bottom: 2em;
 }
 
-#content article h1, #content article h2, #content article h3 {
+article h1, article h2, article h3 {
 	font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-#content article > h1 {
+article > h1 {
 	font-size: 1.8em;
 	border-bottom: 2px solid rgb(76, 67, 65);
 	margin-bottom: 1.5em;
 	background: url(../_images/icon_sprites_50.png) no-repeat
 }
 
-#content article h2 {
+article h2 {
 	font-size: 1.4em;
 	border-bottom: 2px solid rgb(76, 67, 65);
 	margin-top: 1.5em;
 }
 
-#content article h2 a {
+article h2 a {
 	color: rgb(76, 67, 65);
 	border: none;
 }
 
-#content article p {
+article p {
 	font-size:1em;
 	margin: 1.2em 0;
 }
-#content article ul {
+article ul {
 	margin:0 0 1em 50px;
 }
 
@@ -345,6 +352,13 @@ article h2 a:hover {
 	font-style: normal;
 	color: rgba(255, 255, 255, .6);
 	text-shadow: 2px 2px 0 rgba(123, 121, 143,.6);
+}
+
+#galleries h2 {
+	font: 2.8em Georgia, Times, "Times New Roman", serif;
+	float: left;
+	margin: 0 0 .1em;
+	border: none;
 }
 
 .intro {
@@ -540,6 +554,11 @@ aside nav a:hover {
 	color: #fff;
 	border:none;
 	background: rgb(100, 98, 102);
+}
+
+.contest p {
+	font-size: .9em;
+	margin: 0 auto 1.5em;
 }
 
 .contest img {
