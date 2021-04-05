@@ -1,3 +1,4 @@
+
 ul {
     list-style: none;
 }
@@ -6,9 +7,9 @@ li a{
     /* border: 1px solid; */
     margin: 1px;
     padding: 2px;
-    color:blue; 
-    filter: blur(0.8px);
-    font-size: large;
+    color:red; 
+    filter: blur(1.5px);
+    
 }
 li a:hover {
     filter: blur(0px);
