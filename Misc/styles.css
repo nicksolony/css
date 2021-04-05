@@ -1,22 +1,23 @@
 ul {
     list-style: none;
 }
-li {
+li a{
     float: left;
-    border: 1px solid;
+    /* border: 1px solid; */
     margin: 1px;
     padding: 2px;
-    color: red; 
-    -webkit-filter: blur(1px) grayscale(.5);
+    color:blue; 
+    filter: blur(0.8px);
+    font-size: large;
 }
-li:hover {
-    -webkit-filter: blur(0px);
+li a:hover {
+    filter: blur(0px);
 }
 
 .gallery img {
-    -webkit-filter: blur(2px) grayscale(.5);
+    filter: blur(2px) grayscale(1);
 }
 
 .gallery img:hover{
-    -webkit-filter: blur(0px);
+    filter: blur(0px);
 }
