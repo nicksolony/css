@@ -1,15 +1,21 @@
 
+
+.navbar{
+    position: sticky;
+    top:0
+}
 ul {
     list-style: none;
+    
 }
 li a{
     float: left;
     /* border: 1px solid; */
     margin: 1px;
     padding: 2px;
-    color:red; 
-    filter: blur(1.5px);
-    
+    color: white; 
+    /* filter: blur(1.5px); */
+    background-color:gray;
 }
 li a:hover {
     filter: blur(0px);
@@ -21,4 +27,8 @@ li a:hover {
 
 .gallery img:hover{
     filter: blur(0px);
+}
+
+p {
+    width: 300px;
 }
