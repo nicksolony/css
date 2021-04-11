@@ -19,25 +19,72 @@ attribution would be nice, but not required
 */
 
 /* Lab instructions:
-  1. In the _assets folder, open the fonts.txt and paste the @font-face rules where indicated in the Global styles region.
++  1. In the _assets folder, open the fonts.txt and paste the @font-face rules where indicated in the Global styles region.
   
-  2. In the Global styles region, write rules that reset em to displaying as italic, and strong as bold.
++  2. In the Global styles region, write rules that reset em to displaying as italic, and strong as bold.
   
-  3. Find the body selector, and modify the selector to add the following properties: Font family of Cantarell, Arial, Helevetica, sans-serif set the initial font size to the default size of the browser, set the line height property so that all elements have a line-height 1.5 times the size of their font size, set font weight and font style to normal and set the foreground color to ASH (see the color guide above here for values)
++  3. Find the body selector, and modify the selector to add the following properties: Font family of Cantarell, Arial, Helevetica, sans-serif set the initial font size to the default size of the browser, set the line height property so that all elements have a line-height 1.5 times the size of their font size, set font weight and font style to normal and set the foreground color to ASH (see the color guide above here for values)
   
-  4. In the Global styles, find the comment that indicates the location of link styles and create the default basic link styles for the site. For those styles you should strip out all text decoration, set the color of the links to Burnt Orange (see above), and set the hover color to Pewter Blue.
++ 4. In the Global styles, find the comment that indicates the location of link styles and create the default basic link styles for the site. For those styles you should strip out all text decoration, set the color of the links to Burnt Orange (see above), and set the hover color to Pewter Blue.
   
-  5. In the header section of styles, modify the header h1 and h2 styles so that the h1 has a font size of 3.2 times its parent font, set the font weight to bold, display the entire text in all caps, set the line height to an exact 165px and set the color to white.
++  5. In the header section of styles, modify the header h1 and h2 styles so that the h1 has a font size of 3.2 times its parent font, set the font weight to bold, display the entire text in all caps, set the line height to an exact 165px and set the color to white.
   
-  6. For the h2 in the header, set the font style to italic, the font weight to normal, the font size to 1.4 times its parent element, the color to white, all letters to lowercase, increase the space between the letters by .1em, and set the line height to exactly 165px.
++  6. For the h2 in the header, set the font style to italic, the font weight to normal, the font size to 1.4 times its parent element, the color to white, all letters to lowercase, increase the space between the letters by .1em, and set the line height to exactly 165px.
   
-  7. Find the #mainNav a selector and modify the rule so that the text displays in all caps and the text is aligned to the center. Find the #mainNav a em selector below it and modify it so that the text appears in all lowercase.
++  7. Find the #mainNav a selector and modify the rule so that the text displays in all caps and the text is aligned to the center. Find the #mainNav a em selector below it and modify it so that the text appears in all lowercase.
   
-  8. Find the #footer a selector. Modify the selector so that the link tet is aligned vertically with the background image (the bird). Examine the height of the element for a clue to how to accomplish this.
+  8. Find the #footer a selector. Modify the selector so that the link text is aligned vertically with the background image (the bird). Examine the height of the element for a clue to how to accomplish this.
  */
 
 /*Global styles -----------------------------------------------------------------------------------------------------------*/
 /*Paste @font-face rules here */
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-Regular-webfont.eot');
+	src: url('../_fonts/Cantarell-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Regular-webfont.woff') format('woff'), url('../_fonts/Cantarell-Regular-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Regular-webfont.svg#webfont9UOzsjXz') format('svg');
+	font-weight: normal;
+	font-style:normal;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-Oblique-webfont.eot');
+	src: url('../_fonts/Cantarell-Oblique-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Oblique-webfont.woff') format('woff'), url('../_fonts/Cantarell-Oblique-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Oblique-webfont.svg#webfontRl4nowrT') format('svg');
+	font-weight: normal;
+	font-style:italic;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-Bold-webfont.eot');
+	src: url('../_fonts/Cantarell-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-Bold-webfont.woff') format('woff'), url('../_fonts/Cantarell-Bold-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-Bold-webfont.svg#webfontKr2CkGZp') format('svg');
+	font-weight: bold;
+	font-style:normal;
+}
+
+@font-face {
+	font-family: 'Cantarell';
+	src: url('../_fonts/Cantarell-BoldOblique-webfont.eot');
+	src: url('../_fonts/Cantarell-BoldOblique-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/Cantarell-BoldOblique-webfont.woff') format('woff'), url('../_fonts/Cantarell-BoldOblique-webfont.ttf') format('truetype'), url('../_fonts/Cantarell-BoldOblique-webfont.svg#webfontQ1aSR0ux') format('svg');
+	font-weight: bold;
+	font-style:italic;
+}
+
+@font-face {
+	font-family: "Cardo";
+	src: url("../_fonts/Cardo99s-webfont.eot");
+	src: url("../_fonts/Cardo99s-webfont.eot?#iefix") format("embedded-opentype"), url("../_fonts/Cardo99s-webfont.woff") format("woff"), url("../_fonts/Cardo99s-webfont.ttf") format("truetype"), url("../_fonts/Cardo99s-webfont.svg#webfontQ5EXXZTZ") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OstrichSansBold';
+	src: url('../_fonts/ostrich-bold-webfont.eot');
+	src: url('../_fonts/ostrich-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../_fonts/ostrich-bold-webfont.woff') format('woff'), url('../_fonts/ostrich-bold-webfont.ttf') format('truetype'), url('../_fonts/ostrich-bold-webfont.svg#OstrichSansBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 /*limited reset*/
 html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
@@ -48,12 +95,27 @@ html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h
 	font: inherit;
 }
 
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight:bold;
+}
+
 /*html5 display rule*/
 address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
 	display: block;
 }
 /*place basic link styles here*/
+a {
+	text-decoration: none;
+	color: #DB7E40;
+}
 
+a:hover {
+	color: #7B798F;
+}
 
 .preview a {
 	display: block;
@@ -82,6 +144,13 @@ html {
 body {
 	position: relative;
 	background: #fff;
+	font-family: Cantarell, Arial, Helevetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.5;
+	font-style: normal;
+	font-weight: normal;
+	color: #4C4341;
+
 }
 
 #mainNav h2 {
@@ -97,6 +166,7 @@ nav ul {
 body {
 	width: 1280px;
 	margin: 0 auto;
+	
 }
 
 header {
@@ -133,6 +203,11 @@ header {
 }
 
 header h1 {
+	font-size: 3.2em;
+	font-weight:bold;
+	text-transform: uppercase;
+	line-height: 165px;
+	color: white;
 	margin-right: .5em;
 	float: left;
 	padding-left: 110px;
@@ -141,6 +216,13 @@ header h1 {
 
 header h2 {
 	float: left;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 1.4em;
+	color:white;
+	text-transform: lowercase;
+	letter-spacing: .1em;
+	line-height: 165px;
 }
 header a, header a:hover {
 	color: #fff;
@@ -152,6 +234,8 @@ header a, header a:hover {
 	overflow: hidden;
 	margin-bottom: 1.5em;
 	padding-left: 50px;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 #mainNav li {
@@ -179,6 +263,8 @@ header a, header a:hover {
 	font-size: .8em;
 	display: block;
 	color: rgb(76, 67, 65);
+	text-transform: lowercase;
+
 }
 
 a.gallery {
@@ -588,6 +674,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 #pageFooter {
 	background: rgb(173, 169, 130);
 	padding-top: 1.5em;
+	line-height:  100px;
 }
 
 input[type="search"] {
@@ -597,7 +684,6 @@ input[type="search"] {
 #pageFooter label {
 	display: block;
 	font-size: 1.2em;
-	text-transform:uppercase;
 }
 
 #pageFooter p {
