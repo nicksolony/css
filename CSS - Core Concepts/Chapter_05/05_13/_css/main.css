@@ -24,8 +24,8 @@ Done - 1. Find the header selector in the layout styles. Set it's height to 165p
 Done - 2. In the content region styles, find the header selector and set its background color to Dull Gray (see guide above).
 Done - 3. In the layout styles, find the #pageFooter selector and set it's height to 150px.
 Done - 4. In the footer styles section, set the footer's background color to Dark Tan.  #ADA982
-5. Find the banner styles. In the banner selector set the height to 350px, use padding to move the text 50px away from the left edge of the element, and set the background to the gallery_banner.jpg in the _images directory.
-6. Move the text in the banner h1 element down by 290px in a way that allows us to see the full height of the background image.
+Done - 5. Find the banner styles. In the banner selector set the height to 350px, use padding to move the text 50px away from the left edge of the element, and set the background to the gallery_banner.jpg in the _images directory.
+Done - 6. Move the text in the banner h1 element down by 290px in a way that allows us to see the full height of the background image.
 7. In the article section, apply a solid bottom border of 2px that uses the color Ash to the article h2.
 8. In the article styles section, create rules that control the news items at the bottom of the index page's article. These rules should:
 			a. Set the news section elements to a TOTAL width of 400px.
@@ -294,17 +294,24 @@ a.shop {
 }
 
 /*banner styles*/
+/* 5. Find the banner styles. In the banner selector set the height to 350px, use padding to move the text 50px away from the left edge of the element, and set the background to the gallery_banner.jpg in the _images directory. */
 .banner {
+	height: 350px;
+	padding-left: 50px;
+	padding-top: 290px;
 	overflow: hidden;
 	margin-bottom: 4em;
 	position: relative;
+	background-image: url("../_images/gallery_banner.jpg");
+	background-repeat: no-repeat;
 }
-
+/* 6. Move the text in the banner h1 element down by 290px in a way that allows us to see the full height of the background image. */
 .banner h1 {
 	font-size: 2.2em;
 	color: #fff;
 	letter-spacing:.1em;
 	text-transform: uppercase;
+	
 }
 
 .banner p {
