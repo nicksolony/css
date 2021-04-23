@@ -20,10 +20,10 @@ attribution would be nice, but not required
 /*
 LAB OBJECTIVES
 
-1. Find the header selector in the layout styles. Set it's height to 165px;
-2. In the content region styles, find the header selector and set its background color to Dull Gray (see guide above).
-3. In the layout styles, find the #pageFooter selector and set it's height to 150px.
-4. In the footer styles section, set the footer's background color to Dark Tan.
+Done - 1. Find the header selector in the layout styles. Set it's height to 165px;
+Done - 2. In the content region styles, find the header selector and set its background color to Dull Gray (see guide above).
+Done - 3. In the layout styles, find the #pageFooter selector and set it's height to 150px.
+Done - 4. In the footer styles section, set the footer's background color to Dark Tan.  #ADA982
 5. Find the banner styles. In the banner selector set the height to 350px, use padding to move the text 50px away from the left edge of the element, and set the background to the gallery_banner.jpg in the _images directory.
 6. Move the text in the banner h1 element down by 290px in a way that allows us to see the full height of the background image.
 7. In the article section, apply a solid bottom border of 2px that uses the color Ash to the article h2.
@@ -171,8 +171,10 @@ body {
 	margin: 0 auto;
 }
 
+/* 1. Find the header selector in the layout styles. Set it's height to 165px; */
+
 header {
-	
+	height: 195px;
 }
 
 article {
@@ -186,20 +188,24 @@ aside {
 	width: 280px;
 	padding-right: 50px;
 }
-
+/* 3. In the layout styles, find the #pageFooter selector and set it's height to 150px. */
 #pageFooter {
+	height: 150px;
 	clear:both;
 	overflow:hidden;
 }
 
 /* Content region styles -----------------------------------------------------------------------------------------------------------*/
 
+
 /*header styles*/
+/* 2. In the content region styles, find the header selector and set its background color to Dull Gray (see guide above). */
 header {
 	padding-top: 1px;
 	overflow: hidden;
 	margin-bottom: 1.5em;
 	padding-left: 50px;
+	background-color: #646266;
 }
 
 header h1 {
@@ -668,8 +674,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 }
 
 /*footer styles*/
+/* 4. In the footer styles section, set the footer's background color to Dark Tan.  #ADA982 */
 #pageFooter {
 	padding-top: 1.5em;
+	background-color: #ADA982;
 }
 
 input[type="search"] {
