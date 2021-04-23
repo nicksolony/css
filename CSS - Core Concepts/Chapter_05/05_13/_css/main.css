@@ -26,7 +26,7 @@ Done - 3. In the layout styles, find the #pageFooter selector and set it's heigh
 Done - 4. In the footer styles section, set the footer's background color to Dark Tan.  #ADA982
 Done - 5. Find the banner styles. In the banner selector set the height to 350px, use padding to move the text 50px away from the left edge of the element, and set the background to the gallery_banner.jpg in the _images directory.
 Done - 6. Move the text in the banner h1 element down by 290px in a way that allows us to see the full height of the background image.
-7. In the article section, apply a solid bottom border of 2px that uses the color Ash to the article h2.
+Done - 7. In the article section, apply a solid bottom border of 2px that uses the color Ash to the article h2.
 8. In the article styles section, create rules that control the news items at the bottom of the index page's article. These rules should:
 			a. Set the news section elements to a TOTAL width of 400px.
 			b. Create 50px worth of space between the news sections.
@@ -344,9 +344,11 @@ article > h1 {
 	background: url(../_images/icon_sprites_50.png) no-repeat
 }
 
+/* 7. In the article section, apply a solid bottom border of 2px that uses the color Ash to the article h2. #4C4341 */
 article h2 {
 	font-size: 1.4em;
 	margin-top: 1.5em;
+	border-bottom: 2px solid #4C4341;
 }
 
 article h2 a {
@@ -361,8 +363,27 @@ article p {
 article ul {
 	margin:0 0 1em 50px;
 }
+/* 8. In the article styles section, create rules that control the news items at the bottom of the index page's article. These rules should:
+			Done - a. Set the news section elements to a TOTAL width of 400px.
+			Done - b. Create 50px worth of space between the news sections.
+			Done - c. Set the background color of the news section to light tan.
+			Done - d. Hold the edge of the content text away from the edge of the section by 20px
+			e. remove any border from the element
+			f. Round the top-left and bottom-right corners by 15px without changing the other corners.
+			g. Reduce the text size of the sections by 90%.
+			h. Elminate any right margin from the 2nd new section.
+			i. Remove the top margin from the h2 inside the news section */
+
+
 .news {
 	float: left;
+	width: 360px;
+	margin-right: 50px;
+	background-color: #EDE4D6;
+	padding: 20px;
+}
+.news:nth-of-type(2) {
+	margin-right:0px;
 }
 /*page-specific main content styles*/
 #home h1 {
