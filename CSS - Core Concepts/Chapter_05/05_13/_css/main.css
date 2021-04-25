@@ -174,7 +174,7 @@ body {
 /* 1. Find the header selector in the layout styles. Set it's height to 165px; */
 
 header {
-	height: 195px;
+	height: 165px;
 }
 
 article {
@@ -298,7 +298,6 @@ a.shop {
 .banner {
 	height: 350px;
 	padding-left: 50px;
-	padding-top: 290px;
 	overflow: hidden;
 	margin-bottom: 4em;
 	position: relative;
@@ -311,6 +310,7 @@ a.shop {
 	color: #fff;
 	letter-spacing:.1em;
 	text-transform: uppercase;
+	padding-top: 290px;
 	
 }
 
